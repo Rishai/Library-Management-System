@@ -18,6 +18,10 @@ import net.proteanit.sql.DbUtils;
 
 import javax.swing.UIManager;
 import java.awt.Color;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
 
 public class Statistics extends JFrame {
     
@@ -80,7 +84,7 @@ public class Statistics extends JFrame {
 		table.setFont(new Font("Times New Roman", Font.PLAIN, 14));
 		
 		panel_1 = new JPanel();
-		panel_1.setForeground(Color.CYAN);
+		panel_1.setForeground(Color.GREEN);
 		panel_1.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Return Detail", TitledBorder.LEADING, TitledBorder.TOP, null, Color.CYAN));
 		panel_1.setBounds(19, 146, 551, 155);
 		contentPane.add(panel_1);
@@ -92,6 +96,18 @@ public class Statistics extends JFrame {
 		
 		table_1 = new JTable();
 		scrollPane_1.setViewportView(table_1);
+		
+		JButton btnNewButton = new JButton("Back");
+		btnNewButton.setIcon(new ImageIcon(Statistics.class.getResource("/image/undo-arrow.png")));
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				Home hm= new Home();
+				hm.setVisible(true);
+			}
+		});
+		btnNewButton.setBounds(260, 307, 115, 23);
+		contentPane.add(btnNewButton);
 		table1();
 		table2();
 	}

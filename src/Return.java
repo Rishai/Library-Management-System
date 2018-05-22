@@ -318,7 +318,7 @@ public class Return extends JFrame {
 		contentPane.add(btnReturn);
 		
 		btnBack = new JButton(" Back");
-		btnBack.setIcon(new ImageIcon(Return.class.getResource("/image/back.png")));
+		btnBack.setIcon(new ImageIcon(Return.class.getResource("/image/icon.png")));
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				

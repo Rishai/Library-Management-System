@@ -122,7 +122,7 @@ public class NewBook extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("  Back");
-		btnNewButton_1.setIcon(new ImageIcon(NewBook.class.getResource("/image/back.png")));
+		btnNewButton_1.setIcon(new ImageIcon(NewBook.class.getResource("/image/icon.png")));
 		btnNewButton_1.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

@@ -190,7 +190,7 @@ public class Issue extends JFrame {
 			}
 		});
 		btnSearch.setFont(new Font("Times New Roman", Font.PLAIN, 14));
-		btnSearch.setBounds(55, 243, 110, 23);
+		btnSearch.setBounds(60, 276, 110, 23);
 		contentPane.add(btnSearch);
 		
 		JLabel lblStudentId = new JLabel(" Student ID");
@@ -378,7 +378,7 @@ public class Issue extends JFrame {
 		contentPane.add(btnIssue);
 		
 		JButton btnNewButton = new JButton(" Back");
-		btnNewButton.setIcon(new ImageIcon(Issue.class.getResource("/image/back.png")));
+		btnNewButton.setIcon(new ImageIcon(Issue.class.getResource("/image/icon.png")));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
