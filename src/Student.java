@@ -56,7 +56,7 @@ public class Student extends JFrame {
 		super("New Student");
 		setResizable(false);
 		conn=JavaConnect.ConnecrDb();
-		Random();
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 370);
 		contentPane = new JPanel();
@@ -173,7 +173,7 @@ public class Student extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnBack = new JButton("Back");
-		btnBack.setIcon(new ImageIcon(Student.class.getResource("/image/back.png")));
+		btnBack.setIcon(new ImageIcon(Student.class.getResource("/image/icon.png")));
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -184,6 +184,7 @@ public class Student extends JFrame {
 		});
 		btnBack.setBounds(334, 267, 113, 28);
 		contentPane.add(btnBack);
+		Random();
 	}
 
 	public void Random() {
